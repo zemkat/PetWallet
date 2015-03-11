@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Pet Wallet</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
+<script>
+
+// Stub script -- we can do something fancier here!
+// Maybe swipe through multiple pictures of each pet
+$(document).on("pagecreate",function(){
+  $("img").on("swipeleft", function(event) {
+	$(this).hide();
+  });
+});
+
+</script>
+
+	<style>
+		img.fullscreen {
+			max-height: 100%;
+			max-width: 100%;
+		}		
+	</style>
+</head>
+<body>
+<div data-role="page" id="photos">
+	<header data-role="header">
+		<h1>Pet Wallet</h1>
+	</header>
+	<article data-role="main">
+		<ul data-role="listview" data-filter="true">
+			<li>
+				<a href="#annie">
+					<h1>Annie</h1>
+					<img src="http://www.zemkat.org/annie1.jpg" />
+					<p>Annie, the toothless tabby</p>
+				</a>
+			</li>
+			<li>
+				<a href="#cammy">
+					<h1>Cammy</h1>
+					<img src="http://www.zemkat.org/cammy.jpg" />
+					<p>Cammy, the floofy white one</p>
+				</a>
+			</li>
+			<li>
+				<a href="#casper">
+					<h1>Casper</h1>
+					<img src="http://www.zemkat.org/casper.jpg" />
+					<p>Casper, the friendly ghost</p>
+				</a>
+			</li>
+			<li>
+				<a href="#gris">
+					<h1>Gris</h1>
+					<img src="http://www.zemkat.org/griswald.jpg" />
+					<p>Griswald, the playful kitten</p>
+				</a>
+			</li>
+			<li>
+				<a href="#inky">
+					<h1>Inky</h1>
+					<img src="http://www.zemkat.org/inky1.jpg" />
+					<p>Inky, the troublesome tuxedo</p>
+				</a>
+			</li>
+		</ul>
+	</article>
+	<footer data-role="footer" data-position="fixed">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#photos" data-icon="grid">Photos</a></li>
+				<li><a href="#info" data-icon="info">Info</a></li>
+			</ul>
+		</nav>
+	<footer>
+</div>
+
+<!-- Individual Pet Pages -->
+	<div data-role="page" id="annie">
+		<header data-role="header">
+			<h1>Annie</h1>
+			<a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a>
+		</header>
+		<img src="http://www.zemkat.org/annie1.jpg" class="fullscreen" />
+	</div>
+	<div data-role="page" id="cammy">
+		<header data-role="header">
+			<h1>Cammy</h1>
+			<a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a>
+		</header>
+		<img src="http://www.zemkat.org/cammy.jpg" class="fullscreen" />
+	</div>
+	<div data-role="page" id="casper">
+		<header data-role="header">
+			<h1>Casper</h1>
+			<a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a>
+		</header>
+		<img src="http://www.zemkat.org/casper.jpg" class="fullscreen" />
+	</div>
+	<div data-role="page" id="gris">
+		<header data-role="header">
+			<h1>Griswald</h1>
+			<a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a>
+		</header>
+		<img src="http://www.zemkat.org/griswald.jpg" class="fullscreen" />
+	</div>
+	<div data-role="page" id="inky">
+		<header data-role="header">
+			<h1>Inky</h1>
+			<a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a>
+		</header>
+		<img src="http://www.zemkat.org/inky1.jpg" class="fullscreen" />
+	</div>
+
+	<div data-role="page" id="info">
+	<header data-role="header">
+		<h1>Pet Wallet</h1>
+	</header>
+	<p>The pet wallet is based on <a href="http://iviewsource.com/exercises/jqmlist/">this list app</a> from View Source.</p>
+	</p>
+	<footer data-role="footer" data-position="fixed">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#photos" data-icon="grid">Photos</a></li>
+				<li><a href="#info" data-icon="info">Info</a></li>
+			</ul>
+		</nav>
+	<footer>
+	</div>
+
+
+</body>
+</html>
